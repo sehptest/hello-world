@@ -68,3 +68,10 @@ Alle folgenden Aktionen erfolgen in diesem Verzeichnis!
 •	git push origin master (Upload to GitHub.com)
 
 •	git pull origin master (Download from GitHub.com)
+
+
+Visual Studio Code:
+- View > Command Palette... (CTRL+SHIFT+P)
+- Type: Git
+
+- Menu-Left > Source Control (CTRL+SHIFT+G) > v (Commit) ! ... (More Actions)
