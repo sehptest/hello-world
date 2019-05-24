@@ -1,0 +1,70 @@
+Git und GitHub
+
+Account <user> Anlegen unter: https://github.com
+<user> = sehptest / GIT+…
+<email> = …@web.de
+<repo> = hello-world
+
+Installieren: GitHub-Application (Optional?)
+•	zur Verwendung von GitHub commands in der Command-Shell
+
+Repository anlegen unter:
+https://github.com/explore
+Menu > „+ v“ > „New repository“
+Seite …/github.com/new:  
+•	Feld „Repository name“ <repo> eintragen
+•	Checkbox „Initialize this repository with a README“ anwählen
+•	Button „Create repository“ klicken
+
+Folgende Seite wird angezeigt:
+https://github.com/<user>/<repo>.git
+•	Feld „HTTPS clone URL“ <cloneURL>
+
+
+Nutzung Git aus Command-Shell:
+•	git
+•	> zeigt alle Kommandos
+
+•	git config —global user.name „<user>“
+•	git config —global user.email <email>
+•	git config —list (Zeigt config)
+•	git commit —amend —reset-author ???
+
+•	git log (zeigt history der letzten git Kommandos, in VIM beenden mit „:q“)
+•	git log -2
+
+•	git status
+•	> changes not staged for commit: …
+•	> changes added to commit …
+•	> changes to be commited …
+•	> untracked files: ,,,
+
+•	git clone <cloneURL>
+•	git clone https://github.com/<user>/<repo>.git
+-> Erzeugt im aktuellen Verzeichnis ein neues GIT-Verzeichnis: <repo>
+Verzeichnis kann im Editor (Visual Studio Code) geöffnet werden.
+Alle folgenden Aktionen erfolgen in diesem Verzeichnis!
+•	Neue Datei <filename> erstellen
+
+•	git add <filename>, git add -A (All, ggf. immer vor git commit aufrufen) , git add . (add alles)
+•	> Add file to Git staging area
+•	git commit -m „<message>“  (<esc> :wq,<enter> ,falls keine m übergeben wurde)
+•	git commit -a (Übernahme aller Änderungen)
+•	git commit -a -m <message>
+•	git push origin master (danach Abfrage Username, Passwort)
+•	> Upload to remote  GitHub.com, branch master
+•	git pull
+•	> Download from remote GitHub.com
+
+•	git remote (Anzeige remote repository, z.B. GitHub, Ausgabe = origin)
+•	git remote -v (verbose, Ausgabe = origin <cloneURL>
+
+•	git init
+•	> macht aus aktuellem Verzeichnis ein Git Repository
+•	In GitHub muss noch ein neues Repository <repo> angelegt werden
+•	git remote add origin <cloneURL>
+•	git remote (Ausgabe = origin)
+•	git remote -v (Ausgabe = origin <cloneURL>
+•	git push origin master (Upload to GitHub.com)
+
+•	git pull origin master (Download from GitHub.com)
