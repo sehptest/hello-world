@@ -1,3 +1,4 @@
 Lore ipsum.
 Dies ist ein Beispiel-Text.
 Modifikation-1 2020-06-19 in sometext.
+Hotfix-1 2020-06-19 in sometext / branch = hotfix
